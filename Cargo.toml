@@ -1,0 +1,6 @@
+[package]
+name = "rust-assoc-type-talk"
+version = "0.1.0"
+authors = ["ace"]
+
+[dependencies]
