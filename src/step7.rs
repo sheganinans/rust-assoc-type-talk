@@ -31,6 +31,16 @@ impl Add for Point {
     }
 }
 
+impl Add for Point {
+    type Output = Point;
+
+    fn add(self, other: Point) -> Point {
+        Point {
+            x: self.x + other.x,
+            y: self.y + other.y,
+        }
+    }
+}
 pub fn step7() {
     println!("{:?}", Point { x: 1, y: 0 } + Point { x: 2, y: 3 })
 }
